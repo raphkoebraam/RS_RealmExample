@@ -1,4 +1,4 @@
 RS-RealmExample
 =============================
 
-A simple example of a to-do list using [Realm.io](https://realm.io) as database.
+A simple example of a to-do list using [Realm.io](https://realm.io) as database for iOS written in Swift.
