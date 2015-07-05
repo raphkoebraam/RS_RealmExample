@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G18-l5-TjF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Realm Example-->
@@ -54,10 +53,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dv9-St-JQS" firstAttribute="top" secondItem="JAp-5V-jDw" secondAttribute="bottom" id="A1N-AD-9pP"/>
-                            <constraint firstItem="JAp-5V-jDw" firstAttribute="leading" secondItem="05O-e0-cLC" secondAttribute="leadingMargin" constant="-16" id="Gst-vK-fqc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JAp-5V-jDw" secondAttribute="trailing" constant="-16" id="dxK-aO-nVM"/>
-                            <constraint firstItem="JAp-5V-jDw" firstAttribute="top" secondItem="05O-e0-cLC" secondAttribute="topMargin" id="xzK-Hu-ccp"/>
+                            <constraint firstAttribute="trailing" secondItem="JAp-5V-jDw" secondAttribute="trailing" id="IA2-kD-4zQ"/>
+                            <constraint firstItem="JAp-5V-jDw" firstAttribute="leading" secondItem="05O-e0-cLC" secondAttribute="leading" id="Oq5-6y-Lbz"/>
+                            <constraint firstItem="JAp-5V-jDw" firstAttribute="top" secondItem="05O-e0-cLC" secondAttribute="top" id="aqU-iX-u15"/>
+                            <constraint firstItem="Dv9-St-JQS" firstAttribute="top" secondItem="JAp-5V-jDw" secondAttribute="bottom" id="vje-oG-GEE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Realm Example" id="KXe-Xj-gyI">
