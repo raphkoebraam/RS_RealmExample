@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'RS-RealmExample' do
+	pod 'RealmSwift'
+end
+
+target 'RS-RealmExampleTests' do
+
+end
+
