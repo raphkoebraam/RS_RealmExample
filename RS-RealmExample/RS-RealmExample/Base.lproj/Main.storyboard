@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G18-l5-TjF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Realm Example-->
+        <scene sceneID="LUp-OA-1xZ">
+            <objects>
+                <viewController id="Rxu-Pe-vMw" customClass="ViewController" customModule="RS_RealmExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B2y-xE-62p"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dv9-St-JQS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="05O-e0-cLC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JAp-5V-jDw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="M77-5o-ZX7" detailTextLabel="i5s-yf-ihu" style="IBUITableViewCellStyleValue1" id="vBK-Nl-zax">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vBK-Nl-zax" id="3ae-jM-KHh">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M77-5o-ZX7">
+                                                    <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i5s-yf-ihu">
+                                                    <rect key="frame" x="543.5" y="12" width="41.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rxu-Pe-vMw" id="7Df-z9-Jxq"/>
+                                    <outlet property="delegate" destination="Rxu-Pe-vMw" id="hDl-Kf-SzZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dv9-St-JQS" firstAttribute="top" secondItem="JAp-5V-jDw" secondAttribute="bottom" id="A1N-AD-9pP"/>
+                            <constraint firstItem="JAp-5V-jDw" firstAttribute="leading" secondItem="05O-e0-cLC" secondAttribute="leadingMargin" constant="-16" id="Gst-vK-fqc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JAp-5V-jDw" secondAttribute="trailing" constant="-16" id="dxK-aO-nVM"/>
+                            <constraint firstItem="JAp-5V-jDw" firstAttribute="top" secondItem="05O-e0-cLC" secondAttribute="topMargin" id="xzK-Hu-ccp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Realm Example" id="KXe-Xj-gyI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Y52-Y0-VqS">
+                            <connections>
+                                <action selector="addNewToDo:" destination="Rxu-Pe-vMw" id="Fjn-Ic-RBu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="JAp-5V-jDw" id="AmE-Fv-41T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRZ-3T-jBW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="-306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iBe-PK-EWr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G18-l5-TjF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bqf-Rr-PeP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rxu-Pe-vMw" kind="relationship" relationship="rootViewController" id="KZE-aI-XTH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WMG-vC-hOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="-306"/>
+        </scene>
+    </scenes>
+</document>
